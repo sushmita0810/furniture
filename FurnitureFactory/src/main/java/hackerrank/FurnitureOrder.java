@@ -44,6 +44,7 @@ public class FurnitureOrder implements FurnitureOrderInterface {
 
     public int getTypeCount(Furniture type) {
         // TODO: Complete the method
+	    if(!hm.containsKey(type))return 0;
         return hm.get(type);
     }
 
